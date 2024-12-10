@@ -3,15 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     font-family: "Noto Sans", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
+    overflow-x: hidden;
 }
 .header{
     display: flex;
@@ -20,6 +23,7 @@ body{
     background-color: #fdf2e9;
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 .logo{
     height: 2.2rem;
@@ -751,6 +755,21 @@ transform: scale(1.1);
 }
 element.style {
     vertical-align: inherit;
+}
+.btn-mobile-nav{
+border: none;
+background: none;
+cursor: pointer;
+display: none;
+}
+.icon-mobile-nav{
+    height: 4.4rem;
+    width: 4.4rem;
+    color: #333;
+
+}
+.icon-mobile-nav[name="close-outline"]{
+display: none;
 }
 
 
